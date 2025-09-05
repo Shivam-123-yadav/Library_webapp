@@ -17,7 +17,7 @@ from io import BytesIO
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 from reportlab.lib import colors
-from weasyprint import HTML
+from xhtml2pdf import HTML
 
 from .models import Author, Book, Order, Testimonial
 from .forms import AuthorForm, BookForm, SignupForm, LoginForm, BuyNowForm
