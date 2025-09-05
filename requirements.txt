@@ -10,6 +10,8 @@ cffi==1.17.1
 charset-normalizer==3.4.3
 crispy-bootstrap5==2025.6
 cssselect2==0.8.0
+xhtml2pdf
+
 Django==4.2.23
 django-crispy-forms==2.4
 fonttools==4.59.2
@@ -43,5 +45,6 @@ weasyprint==66.0
 webencodings==0.5.1
 yarl==1.20.1
 zopfli==0.2.3.post1
+
 
 
