@@ -109,16 +109,15 @@ WSGI_APPLICATION = 'mypro.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# settings.py
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME'),       # Database name from Render
-        'USER': os.getenv('DB_USER'),       # Username from Render
-        'PASSWORD': os.getenv('DB_PASSWORD'), # Password from Render
-        'HOST': os.getenv('DB_HOST'),       # Hostname from Render
-        'PORT': os.getenv('DB_PORT', '5432'), # Port from Render
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / "db.sqlite3",  # Database file path
     }
 }
+
 
 
 # Password validation
